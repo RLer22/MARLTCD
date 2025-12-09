@@ -2,8 +2,6 @@
 
 
 
-[TOC]
-
 ## Repository Status
 
 This repository provides the core resources for reproducing the key findings of our paper:

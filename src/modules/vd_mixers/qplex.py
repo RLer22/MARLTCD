@@ -1,9 +1,8 @@
-import torch as th
-import torch.nn as nn
-import torch as th
+import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
+import torch as th
 
 class QPLEXMixer(nn.Module):
     def __init__(self, args):
@@ -31,7 +30,7 @@ class QPLEXMixer(nn.Module):
                                    nn.ReLU(),
                                    nn.Linear(hypernet_embed, 1))
         else:
-            raise Exception("wrong")
+            raise Exception("Sorry >2 hypernet layers is not implemented for QPLEXMixer!")
 
     def forward(self, agent_qs, states):
         if agent_qs.dim() == 4 and agent_qs.size(-1) == 1:
