@@ -26,135 +26,15 @@ path: MARLTCD\src\config\algs
 
 <p align="left">Detailed data for <strong>Figure 6</strong> in the manuscript are presented below:</p>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: auto;
-            margin: 20px auto;
-            font-family: Arial, sans-serif;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px 12px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-            font-weight: bold;
-        }
-        .scenario-header {
-            background-color: #f2f2f2;
-        }
-        .best-score {
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-    <table>
-        <thead>
-            <tr>
-                <th rowspan="2">Method</th>
-                <th colspan="3">Scenario</th>
-            </tr>
-            <tr>
-                <th>MMM2</th>
-                <th>5m_vs_6m</th>
-                <th>3s5z_vs_3s6z</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>QPLEX+TCD</td>
-                <td>93.54±2.32</td>
-                <td>84.02±7.22</td>
-                <td>50.35±10.03</td>
-            </tr>
-            <tr>
-                <td>QPLEX+DM w/o CL</td>
-                <td>91.67±3.18</td>
-                <td>81.00±5.34</td>
-                <td>48.61±11.48</td>
-            </tr>
-            <tr>
-                <td>QPLEX+FTDM</td>
-                <td>87.50±8.76</td>
-                <td>74.17±11.21</td>
-                <td>36.11±12.38</td>
-            </tr>
-            <tr>
-                <td>QPLEX+FDM</td>
-                <td>84.22±8.42</td>
-                <td>73.96±10.71</td>
-                <td>27.43±9.52</td>
-            </tr>
-            <tr>
-                <td>QPLEX</td>
-                <td>80.21±8.74</td>
-                <td>70.21±10.03</td>
-                <td>24.31±11.34</td>
-            </tr>
-        </tbody>
-    </table>
-</body>
-</html>
-
-<table>
-  <thead>
-    <tr>
-      <th rowspan="2">Method</th>
-      <th colspan="3" style="text-align:center;">Scenario</th>
-    </tr>
-    <tr>
-      <th>MMM2</th>
-      <th>5m_vs_6m</th>
-      <th>3s5z_vs_3s6z</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>QPLEX+TCD</td>
-      <td>93.54±2.32</td>
-      <td>84.02±7.22</td>
-      <td>50.35±10.03</td>
-    </tr>
-    <tr>
-      <td>QPLEX+DM w/o CL</td>
-      <td>91.67±3.18</td>
-      <td>81.00±5.34</td>
-      <td>48.61±11.48</td>
-    </tr>
-    <tr>
-      <td>QPLEX+FTDM</td>
-      <td>87.50±8.76</td>
-      <td>74.17±11.21</td>
-      <td>36.11±12.38</td>
-    </tr>
-    <tr>
-      <td>QPLEX+FDM</td>
-      <td>84.22±8.42</td>
-      <td>73.96±10.71</td>
-      <td>27.43±9.52</td>
-    </tr>
-    <tr>
-      <td>QPLEX</td>
-      <td>80.21±8.74</td>
-      <td>70.21±10.03</td>
-      <td>24.31±11.34</td>
-    </tr>
-  </tbody>
-</table>
+| Method          | MMM2       | 5m_vs_6m    | 3s5z_vs_3s6z |
+| --------------- | ---------- | ----------- | ------------ |
+| QPLEX+TCD       | 93.54±2.32 | 84.02±7.22  | 50.35±10.03  |
+| QPLEX+DM w/o CL | 91.67±3.18 | 81.00±5.34  | 48.61±11.48  |
+| QPLEX+FTDM      | 87.50±8.76 | 74.17±11.21 | 36.11±12.38  |
+| QPLEX+FDM       | 84.22±8.42 | 73.96±10.71 | 27.43±9.52   |
+| QPLEX           | 80.21±8.74 | 70.21±10.03 | 24.31±11.34  |
 
 <p align="left">Detailed data for <strong>Figure 7</strong> in the manuscript are presented below:</p>
-
-### 3 Supporting Data
-
-Detailed data for Figure 6 in the manuscript are presented below.
-
-
 
 <p align="left">Detailed data for <strong>Figure 8</strong> in the manuscript are presented below:</p>
 
