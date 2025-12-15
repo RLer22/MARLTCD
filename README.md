@@ -1,14 +1,14 @@
 # MARLTCD
 
-[Repository Status](#repository-status) 
 
-[1 TCD Implementation](#1-tcd-implementation) 
 
-[2 Experimental Configurations](#2-experimental-configurations) 
+- [Repository Status](#1-Repository-Status)
+- [1 TCD Implementation](#1-tcd-implementation)
+- [2 Experimental Configurations](#2-experimental-configurations)
+- [3 Supporting Data](#3-supporting-data)
+- [Thanks](#Thanks)
 
-[3 Supporting Data](#3-supporting-data)
-
-## Repository Status {#repository-status}
+## Repository Status
 
 This repository provides the core resources for reproducing the key findings of our paper:
 
@@ -20,15 +20,15 @@ This repository provides the core resources for reproducing the key findings of 
 
 Please feel free to **open an issue** for any immediate questions.
 
-## 1 TCD Implementation {#1-tcd-implementation}
+## 1 TCD Implementation
 
 path: MARLTCD\src\modules\TCD_AAO.py & TCD_AOE.py
 
-## 2 Experimental Configurations {#2-experimental-configurations}
+## 2 Experimental Configurations
 
-path: MARLTCD\src\config\algs
+path: MARLTCD\src\config\algs\
 
-## 3 Supporting Data {#3-supporting-data}
+## 3 Supporting Data
 
 <p align="left">Detailed data for <strong>Figure 6</strong> in the manuscript are presented below:</p>
 
