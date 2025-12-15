@@ -34,9 +34,9 @@ path: MARLTCD\src\config\algs
 |    QPLEX+FDM    | 84.22±8.42 | 73.96±10.71 |  27.43±9.52  |
 |      QPLEX      | 80.21±8.74 | 70.21±10.03 | 24.31±11.34  |
 
-<p align="left">Detailed data for <strong>Figure 7</strong> in the manuscript are presented below:</p>
+<p align="left">Detailed data for <strong>Figure 7(a)</strong> in the manuscript are presented below:</p>
 
-|  λ   |  τ   |    Value    |
+|  λ   |  τ   |  3s_vs_5z   |
 | :--: | :--: | :---------: |
 | 0.1  | 0.01 | 98.06±5.40  |
 | 0.1  | 0.05 | 95.49±6.11  |
@@ -48,7 +48,13 @@ path: MARLTCD\src\config\algs
 
 <p align="left">Detailed data for <strong>Figure 8</strong> in the manuscript are presented below:</p>
 
-
+| Method | 3_vs_11_with_keeper |
+| :----: | :-----------------: |
+|  TCD   |     46.23±11.01     |
+|  RND   |      31.6±3.61      |
+|  ICM   |     26.93±4.22      |
+| QPLEX  |     26.74±4.97      |
+| MAVEN  |     15.56±12.15     |
 
 ## Thanks
 
