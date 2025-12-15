@@ -26,13 +26,13 @@ path: MARLTCD\src\config\algs
 
 <p align="left">Detailed data for <strong>Figure 6</strong> in the manuscript are presented below:</p>
 
-| Method          | MMM2       | 5m_vs_6m    | 3s5z_vs_3s6z |
-| --------------- | ---------- | ----------- | ------------ |
-| QPLEX+TCD       | 93.54±2.32 | 84.02±7.22  | 50.35±10.03  |
+|     Method      |    MMM2    |  5m_vs_6m   | 3s5z_vs_3s6z |
+| :-------------: | :--------: | :---------: | :----------: |
+|    QPLEX+TCD    | 93.54±2.32 | 84.02±7.22  | 50.35±10.03  |
 | QPLEX+DM w/o CL | 91.67±3.18 | 81.00±5.34  | 48.61±11.48  |
-| QPLEX+FTDM      | 87.50±8.76 | 74.17±11.21 | 36.11±12.38  |
-| QPLEX+FDM       | 84.22±8.42 | 73.96±10.71 | 27.43±9.52   |
-| QPLEX           | 80.21±8.74 | 70.21±10.03 | 24.31±11.34  |
+|   QPLEX+FTDM    | 87.50±8.76 | 74.17±11.21 | 36.11±12.38  |
+|    QPLEX+FDM    | 84.22±8.42 | 73.96±10.71 |  27.43±9.52  |
+|      QPLEX      | 80.21±8.74 | 70.21±10.03 | 24.31±11.34  |
 
 <p align="left">Detailed data for <strong>Figure 7</strong> in the manuscript are presented below:</p>
 
