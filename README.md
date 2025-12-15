@@ -102,7 +102,57 @@ path: MARLTCD\src\config\algs
 </body>
 </html>
 
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Method</th>
+      <th colspan="3" style="text-align:center;">Scenario</th>
+    </tr>
+    <tr>
+      <th>MMM2</th>
+      <th>5m_vs_6m</th>
+      <th>3s5z_vs_3s6z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>QPLEX+TCD</td>
+      <td>93.54±2.32</td>
+      <td>84.02±7.22</td>
+      <td>50.35±10.03</td>
+    </tr>
+    <tr>
+      <td>QPLEX+DM w/o CL</td>
+      <td>91.67±3.18</td>
+      <td>81.00±5.34</td>
+      <td>48.61±11.48</td>
+    </tr>
+    <tr>
+      <td>QPLEX+FTDM</td>
+      <td>87.50±8.76</td>
+      <td>74.17±11.21</td>
+      <td>36.11±12.38</td>
+    </tr>
+    <tr>
+      <td>QPLEX+FDM</td>
+      <td>84.22±8.42</td>
+      <td>73.96±10.71</td>
+      <td>27.43±9.52</td>
+    </tr>
+    <tr>
+      <td>QPLEX</td>
+      <td>80.21±8.74</td>
+      <td>70.21±10.03</td>
+      <td>24.31±11.34</td>
+    </tr>
+  </tbody>
+</table>
+
 <p align="left">Detailed data for <strong>Figure 7</strong> in the manuscript are presented below:</p>
+
+### 3 Supporting Data
+
+Detailed data for Figure 6 in the manuscript are presented below.
 
 
 
