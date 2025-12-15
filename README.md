@@ -36,6 +36,16 @@ path: MARLTCD\src\config\algs
 
 <p align="left">Detailed data for <strong>Figure 7</strong> in the manuscript are presented below:</p>
 
+|  λ   |  τ   |    Value    |
+| :--: | :--: | :---------: |
+| 0.1  | 0.01 | 98.06±5.40  |
+| 0.1  | 0.05 | 95.49±6.11  |
+| 0.05 | 0.01 | 95.77±7.22  |
+| 0.05 | 0.05 | 96.79±7.29  |
+|  0   |  0   | 87.31±8.11  |
+| 0.1  | 0.1  | 79.14±13.69 |
+| 0.5  | 0.1  | 41.81±35.33 |
+
 <p align="left">Detailed data for <strong>Figure 8</strong> in the manuscript are presented below:</p>
 
 
