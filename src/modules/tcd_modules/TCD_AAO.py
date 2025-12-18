@@ -9,13 +9,13 @@ USE_CUDA = torch.cuda.is_available()
 Variable = lambda *args, **kwargs: autograd.Variable(*args, **kwargs).cuda() if USE_CUDA else autograd.Variable(*args, **kwargs)
 
 
-class Encoder(nn.Module):  # 编码器是线性层(32->128)+relu
+class Encoder(nn.Module):  
     def __init__(self, din=32, hidden_dim=128):
         super(Encoder, self).__init__()
         self.fc = nn.Linear(din, hidden_dim)
 
-    def forward(self, x):  # (32x,5,80)
-        embedding = F.relu(self.fc(x))  # (32x,5,64)
+    def forward(self, x):  
+        embedding = F.relu(self.fc(x))  
         return embedding
 
 
@@ -26,25 +26,25 @@ class AttModel(nn.Module):
         self.fcv = nn.Linear(din, hidden_dim)
         self.fck = nn.Linear(din, hidden_dim)
         self.fcq = nn.Linear(din, hidden_dim)
-        # 增加缩放因子 (推荐)
+
         self.scale = math.sqrt(hidden_dim)
 
     def forward(self, x, mask, return_attention=False):
-        # 你的 Q, K, V 计算
-        v = self.fcv(x)  # 不使用 relu 更标准
+
+        v = self.fcv(x)  
         q = self.fcq(x)
         k = self.fck(x).permute(0, 2, 1)
 
-        # 注意力分数计算，加上缩放
+
         att_scores = torch.bmm(q, k) / self.scale
 
-        # Masking
+
         att_scores = att_scores.masked_fill(mask == 0, -1e9)
 
-        # Softmax 得到注意力权重
+
         attention_weights = F.softmax(att_scores, dim=2)
 
-        # 应用到 V
+
         out = torch.bmm(attention_weights, v)
 
 
@@ -85,7 +85,7 @@ class RNDNetwork(nn.Module):
 
     def forward(self, state, mask, return_attention=1):
         h1 = self.encoder(state)
-        # 核心修改：在这里接收注意力权重
+
         h2, attention_weights = self.att(h1, mask, return_attention=True)
         h3 = self.outLayer(self.relu(h2))
         return h3, attention_weights

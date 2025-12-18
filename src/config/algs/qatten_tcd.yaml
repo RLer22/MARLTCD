@@ -1,15 +1,12 @@
-# --- Qatten specific parameters ---
+# --- Qatten ---
 
-# use epsilon greedy action selector
 action_selector: "epsilon_greedy"
 epsilon_start: 1.0
 epsilon_finish: 0.05
 epsilon_anneal_time: 50000
 runner: "episode"
 buffer_size: 5000
-# update the target network every {} episodes
 target_update_interval: 200
-# use the Q_Learner to train
 agent_output_type: "q"
 learner: "dmaq_qatten_rnd_learner"
 double_q: True
@@ -22,28 +19,24 @@ num_kernel: 4
 is_minus_one: True
 is_adv_attention: True
 is_stop_gradient: True
-n_head: 4  # attention head number
-attend_reg_coef: 0.01  # attention regulation coefficient  # For MMM2 and 3s5z_vs_3s6z, it is 0.001 注意调节系数
-state_bias: True  # the constant value c(s) in the paper
+n_head: 4  
+attend_reg_coef: 0.01 
+state_bias: True
 mask_dead: False
-weighted_head: False  # weighted head Q-values, for MMM2 and 3s5z_vs_3s6z, it is True
-nonlinear: False  # non-linearity, for MMM2, it is True
+weighted_head: False
+nonlinear: False  
 burn_in_period: 100
 name: "qplex_rnd"
-#--- RND params ---
 RND_hidden_dim: 64
-#intrinsic_scale: 0.5 # 0.001
-
-# --- Useful params ---
-model_type: 1 # ATC[1] or 徐小杰[0]
-kl_lambda: 0 # [0]中的kl损失系数
+model_type: 1
+kl_lambda: 0 
 seed: 30
-atc_pretrain: 1500000 # atc模块的预训练时长
-atc_decay: 1200000 # atc模块开始衰减的时刻
-decay_coefficient: 0.0 # atc模块衰减的系数
+atc_pretrain: 1500000
+atc_decay: 1200000
+decay_coefficient: 0.0 
 rnd_start_train: 500000
-tau: 0.000 # 0.0001
-tau_pred: 0.0 # 0.9 把多少ATC_pred参数给RND_pred
-tau_tgt: 0.0 # 0.01 把多少ATC_target参数给RND_target
-intrinsic_scale: 0.5 # 0.001
+tau: 0.000 
+tau_pred: 0.0 
+tau_tgt: 0.0 
+intrinsic_scale: 0.5 
 
