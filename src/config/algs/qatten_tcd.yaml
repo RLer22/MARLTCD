@@ -8,9 +8,9 @@ runner: "episode"
 buffer_size: 5000
 target_update_interval: 200
 agent_output_type: "q"
-learner: "dmaq_qatten_rnd_learner"
+learner: "qatten_rnd_learner"
 double_q: True
-mixer: "dmaq_qatten"
+mixer: "qatten"
 mixing_embed_dim: 32
 hypernet_embed: 64
 adv_hypernet_layers: 1
@@ -38,5 +38,5 @@ rnd_start_train: 500000
 tau: 0.000 
 tau_pred: 0.0 
 tau_tgt: 0.0 
-intrinsic_scale: 0.5 
+intrinsic_scale: 0.5
 
